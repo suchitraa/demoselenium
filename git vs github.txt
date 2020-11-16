@@ -97,6 +97,58 @@ readme:description of files in your repo
 git add origin ""---for linkning to the remote repo-to add remote repo.
 
                 ---you need to know which repo  you are pushing into.
+                
+                --
+
+git status-to see what has to be added to the index and what has been added.to commit you have to add it in the index.
+
+git add -A(to add all file sfor commit)
+
+git commit -a -m "ddf"(to commit all files)
+  yuo cannot commit without a message.
+--recording snapshots of the repo. 
+
+
+
+
+
+branches:
+
+pointers to specific commit.
+
+it is good to have brachnes because one branch can be used for testing and the  other branch for production so that it will be easy to collobarate and doesnt confuse.
+
+create branch:
+git branch branchname
+
+git checkout branchname -now you will be in that branch
+
+git add newfilename 
+
+
+git commit -m ""
+
+
+ls--now you will have the fiels from the master bracnh also.
+
+
+master bracnch-it will contain the quality prod code.
+
+
+only if you merge,changes in the branch will be reflected in the master branch.
+
+
+
+generate using ssh:
+ssh-keygen    --my ssh key
+
+ssh -T gitsshurl---for authentication
+
+
+
+
+
+
 
 
 
