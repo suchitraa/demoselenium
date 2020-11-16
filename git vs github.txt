@@ -1,0 +1,109 @@
+what is git and github?
+
+github:-hosting server
+hosting service avaialable
+website provides different services,like 
+1.wiki
+2.task management tool
+3.bug tracking-whenever you find any issues with say,in selenium code that is pushed,you can raise a issue and it will be handled by gitrepo.
+4.hosting services for your git repo. 
+
+
+checkin-push the code
+checkout-pull the code
+
+
+git repo:is a centralised repository
+
+git:source contol management tool where checkin,checkout,push,pull happen.
+
+
+gitrepo provides services like wiki,task management,bug tracking.
+
+
+git is a tool and github -hosting service.
+
+
+git init-intizalise repo
+
+
+
+
+
+
+edureka:
+
+version-control: a system that managaes the changes to the documents in the form of versions.
+
+--keeps your older versions safe so that you can go back to older versions.
+--priovies shared workspace and notifies if someone makes a change to the project
+
+--snapshots are properly stored.
+--backup:
+
+1.developers alwasys fetch copies  daily from central server to local system and transfer from the local to the central so its vice-cersa available.
+
+2.notify you the changes made in the document and when the changes is amde.
+
+
+
+version-control tool:
+
+1.git
+2.cvs
+3.apache subversion
+4.mercurial
+
+
+
+git:version-control tool that allows operations like to fetch data from the central server,push data from the local to central.
+
+repository:data space where you store the projects,files.
+
+git-hub: code hosting platform .hosting service for git repository.hosts your central repository in a remote server.it can be compared to facebook.fb is a social network where people post photos,share videos.github-developers share their codes everyone to see their project.central server is located on remote server.
+
+it is not good to automate using tools.it is always good to push the code when you want.
+
+
+pros of dvcs:
+1.no need of internet
+2.always have a backup in local repo even if central repo crashes
+
+
+git will help you in creating local repo and update all the files in remote repo.
+
+
+feautures of git:
+1.distributed:every developer has a local repo and changes can be made from one repo to the another.
+ 
+2.few seconds to create and merger branches.
+
+3.fetching data from local repo is 100 times faster than remote repo.
+
+4.branch is like a pointer to the next commit
+
+5.when system crash,you can recover the lost data from repo.
+
+
+
+git operations and commands:
+
+
+git init:initialise local repo.
+
+readme:description of files in your repo
+
+
+git add origin ""---for linkning to the remote repo-to add remote repo.
+
+                ---you need to know which repo  you are pushing into.
+
+
+
+
+
+
+
+
+
+
