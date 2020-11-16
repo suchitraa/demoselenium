@@ -1,0 +1,192 @@
+pom.xml:
+
+It is a configuration file used by maven for addding the jars into the project.you dont need to manually add any jars.you just need to configure the dependency and and the pom.xml will download it for you and place it in m2 folder.
+
+Maven downloads all jars in the pom.xml and stores in the maven repository.It downloads from the central respository.if it is not available,then it goes to the remote repository.
+
+
+groupid:domain id/project group id that is unique for each organisation,artficat id: jar name version:project version.you can search for it in the mvnreposiory.com
+
+
+
+
+maven and its uses:
+
+1)Maven automatically downloads the necessary files from the repository while building the project usging the pom.xml
+
+2)structure:src/main/java-different pages of the pom are kept here
+
+.src/test/java:tests that are created are kept under src/main/resources
+
+.src/test/resources:properties files,excel files are kept here.
+
+
+
+
+
+maven-build automation tool
+
+3 major lifecycle:
+
+   1.maven compile-->number of java classes,compile it a sinlgle unit-->by maven compiler plugin
+
+   2.maven test--->writing test cases using junt/testng-->unit test cases,integration test cases,functional test cases--junit/testng-->performed by maven surefire plugin
+
+   3.maven resources generation (form of jar files)--->after compiling and test,jar files will be created like jar/war/ear->by maven resources plugin.
+
+
+
+instaead of maven build,command:mvn clean install-->install the jar files after build.build means generating the jar files
+
+
+mvn test-->will eexceute the testcases,not for build
+
+
+
+ignoring test cases:mvn package -D skipTests
+mvn package -d maven.test.skip=True
+
+
+
+maven commands:http://tutorials.jenkov.com/maven/maven-commands.html
+
+
+interview question:
+what role of compiler plugin,surefireplugin
+
+
+compiler plugin:in which
+surefire plugin:in wchih test cases gets executed and also it is used to configure my testng files if I use that.
+
+source plugin:where i need to decide in which source i need .like in jar/war/ear.
+
+
+maven-build automation tool.
+
+maven will send a request in the form of dependency to central repository.dependency has 3 attributes.groupid,artifactid,version.update the version in pom.xml and you will be given the specified jars.
+
+it stores all the jars in .m2 file in your local system.
+
+interview questions:
+
+a)what is maven
+
+maven is an build automation tool.It is driven by POM.
+1)it takes care of your dependecies.you dont need to manually add any jars.whatever dependency you specify, maven will automatiocally download it from the central repo and store it in .m2 folder.
+
+2)your project is better structured.
+
+all your code will go into src folder.and the one that comes from compiling the project will go into target folder like the jar /war file.
+
+b)maven lifecycle:
+It determines the order in which the maven goals are to be performed.
+
+1.deafult:build and deployment takes place
+2.clean:clean the proejct and the artifact that is produced from the prebuilding process
+3.site:documentation.
+
+c)phases:
+
+represents stages in the lifecycle.
+validate,compile,test,package,integration,install,deploy
+
+d)goal:
+phases is a sequence of goal.each goal is for a specific task.
+
+for example if a certain plugin has a specific goal,then you can choose to performa spefic goal.
+
+failsafe plugin:3 goals-integration,verify.then you can specify your required goal.
+
+mvn failsafe:verify
+
+e)remote repo:
+
+each organisation has some projects that is specific only to the orgainsation.in that case,they may craete remote repo and deploy these artifacts.
+
+central repo is located at http://repo.maven.apache.irg.maven tries to find the dependency from here.
+
+
+f)build tool and its uses:
+
+it compiles and packages the code in the form of distributable format like jar/war.,downloading dependecies,running tests.
+
+g)diff between plugin and dependency?
+plugin:executing  a specific task
+
+dependencies:jar file that will be added in the classpath.
+
+h)maven artifact:
+
+generally a jar,output of maven build.it is identifed by groupid,articatid,version
+
+i)scopes of maven dependency:
+ transitive dependecy:dependencies f your direct dependencies.scope limits the transitive dependencies.
+
+compile,provided,runtime,system,test,import
+
+j)diff between maven and ant?
+
+maven-information are defined in pom.xml file ,ant-instructions are given in a specific order.
+
+maven-has life cycle,ant-does not have a life cycle
+
+maven-is a management and build tool,ant-only for build process
+maven plugins-reused,ant scripts-cannot be reused.
+
+k)maven archetype
+
+is a plugin that generates project sturucture according to the template.
+
+l)snapshot:
+
+unreleased version.it might change to any version.it is still under the active development.
+
+m)plugins:
+
+generates jar files,war files,compiles the code,executes the unit test,documentation,reports.
+
+n)types of maven plugin:
+
+building plugin:used at the time of the build and defined in the building elelemnt of the pom file
+
+reporting plugin:at the time of site generation or the report geneartion 
+
+o)goals:each goal is for  a specific task involved in the execution of the build.
+'
+if a plugin has 3 goals:then we need to specify which one.example mvn failsafe:generate
+
+p)maven build profiles:
+usign profile,you can customize build for different environments.
+
+
+trpes of  build profiles;per-user,per-project,global
+
+q)mojo:
+maven old java object.it is used to increase the feautures of the maven
+
+r)excelusion element in maven:
+in order to keep out  any dependencies,excelusion element is used.
+
+s)
+
+
+sub:Request-info-Fulltimeoppurtunities
+
+as discussed with you by may,i will be garduate in dec 2020 and i am currently looking forfulll time oppurtunities.I will be start looking from the month of feb .nuder this conditions,i wanted to request/check with you if thr are any full time oppuriti at bmw/in your team .If so I would be very mich interested in full timem opputinities.
+
+
+Please let me know.eagerly awaiting your reply.
+
+
+
+charles scwab:
+Thank you for intervieing me last week for this positions and getting to know about my qualifications.I would like to follow up with you reg the interview .
+
+Please let me know  if you need any other information from me.
+ thank you for your time.
+
+
+Thank you for giving me the oppurtuinyt to talk about me and my qualifications.
+
+
+

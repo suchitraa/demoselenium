@@ -1,0 +1,23 @@
+Keyword driven framework-I will have a seperate library file called keywords.java where I will have the implemnation of the actions of the keywords.In other words,the definition of the keywords will be in nthe keywords file.Then,I will have the driverdcript which has the configuration of the drivers and path of the excel file and basiically invokes the excel file.I will have an external file called excel sheets which has the testcases or the steps of the scenarios.and finally executed in browser.
+
+
+Object repoisoriry file is a properties file .
+Insidecode:
+
+Say for example I have to enter a url,so i use driver.get.Since I am using a framework,i generalize it .so i crerate a function for that .Inside i write driver.get(testdata).I pass as parameter-driver instance and the testdata from the dattasheet.
+
+To connect the datasheet and the keywords file:
+
+I have the XSFF workbook class using the poi jar.this jar ,i instaklled in dependency in pom.xml.Using XSFF workbook,i can access excel file and their contents.using the fileinputstream i open the worrkbook and in filestream function i pass the path where I have the excel file located. I have added the poi jar as dependency in pom.xml file thru which i can access the xsff workbook.File input stream is to acess/open te workbook.
+
+
+Now,I have a seperate iteration for the number if sheets inside workbook.So i use getnumberofsheets() method to return the number of tabs inside the workbook.
+
+Now,using the first for loop to iterate the each tab,i specify getsheetat() to go/openn  inside the specified tab index.
+
+getlastrownumber():it gets the non-empty last row number.store it ia variable.I can iterate each row using that lastrownumber.
+
+
+using for loop for each row,you get each value using getrownumber and then the cell content using getrow().getStringcellvalue().
+
+
